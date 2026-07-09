@@ -1,27 +1,4 @@
-
-```mermaid
-flowchart TD
-    INTERN["IAM User: intern"]
-    GROUP["IAM Group: interns"]
-    POLICY["IAM Policy<br/>Allow if Env = development"]
-
-    INTERN -->|member of| GROUP
-    GROUP -->|has attached| POLICY
-
-    subgraph EC2["Amazon EC2"]
-        DEV["Dev Instance<br/>Tag: Env = development"]
-        PROD["Prod Instance<br/>Tag: Env = production"]
-    end
-
-    POLICY -->|"StopInstances ALLOWED"| DEV
-    POLICY -.->|"StopInstances DENIED"| PROD
-
-    style INTERN fill:#f3e8fd,stroke:#a142f4,color:#000
-    style GROUP fill:#fef7e0,stroke:#f9ab00,color:#000
-    style POLICY fill:#e8f0fe,stroke:#4285f4,color:#000
-    style DEV fill:#e6f4ea,stroke:#34a853,color:#000
-    style PROD fill:#fce8e6,stroke:#ea4335,color:#000
-```
+<img width="735" height="590" alt="image" src="https://github.com/user-attachments/assets/6090b9d0-0694-42df-a3fb-da7d2d52f482" />
 
 ## Introducing Today's Project!
 
