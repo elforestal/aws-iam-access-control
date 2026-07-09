@@ -8,7 +8,18 @@ In this project, I will use AWS IAM to enforce least-privilege access control. I
 
 ### Tools and concepts
 
-Services I used were AWS IAM (to create policies, users, and groups), Amazon EC2 (the instances I controlled access to), and the IAM Policy Simulator (to validate permissions). Key concepts I learnt include least-privilege access control, IAM policies and their structure (Effect, Action, Resource, and Condition), and tag-based (attribute-based) access control — using an Env tag to scope permissions to development resources but not production. I also worked with IAM users and groups, attaching policies at the group level for scalable permission management, and account aliases for simpler sign-in. Most importantly, I tested and validated access two ways: live, by logging in as the intern user, and through the Policy Simulator — confirming production was denied and development was allowed exactly as designed.
+**Services used**
+- 🔐 **AWS IAM** — created policies, users, and groups
+- 💻 **Amazon EC2** — the instances I controlled access to
+- 🧪 **IAM Policy Simulator** — validated permissions without touching live resources
+
+**Key concepts**
+- Least-privilege access control
+- IAM policy structure — `Effect`, `Action`, `Resource`, and `Condition`
+- Tag-based (attribute-based) access control — scoping access by an `Env` tag
+- IAM users and groups — attaching policies at the group level for scalable management
+- Account aliases for simpler sign-in
+- **Two-way access validation** — tested live (as the intern user) and via the Policy Simulator, confirming production was denied and development allowed exactly as designed
 
 ### Project reflection
 
